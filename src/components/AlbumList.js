@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; // importing react library and component feature
-import { View } from 'react-native'; // destructured import, importing only the text instead of the whole library.
+import { ScrollView } from 'react-native'; // destructured import, importing only the text instead of the whole library.
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -30,9 +30,9 @@ class AlbumList extends Component {
     render() {
         console.log(this.state.albums);
         return (
-            <View>
+            <ScrollView>
                 {this.renderAlbums()}
-            </View >
+            </ScrollView >
         )
 
     }
